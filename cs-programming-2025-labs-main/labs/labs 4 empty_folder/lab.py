@@ -193,22 +193,7 @@ def task10():
         print("Ошибка")
 
 def main():
-    """
-    Основная функция для запуска всех заданий
-    """
-    tasks = {
-        '1': task1,
-        '2': task2,
-        '3': task3,
-        '4': task4,
-        '5': task5,
-        '6': task6,
-        '7': task7,
-        '8': task8,
-        '9': task9,
-        '10': task10
-    }
-    
+   
     while True:
         print("\n" + "="*50)
         print("Лабораторная работа 4")
