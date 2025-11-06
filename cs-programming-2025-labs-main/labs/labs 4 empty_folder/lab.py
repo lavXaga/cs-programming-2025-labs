@@ -194,22 +194,4 @@ def task10():
 
 def main():
    
-    while True:
-        print("\n" + "="*50)
-        print("Лабораторная работа 4")
-        print("="*50)
-        print("Выберите задание (1-10) или 'q' для выхода:")
-        
-        choice = input().strip()
-        
-        if choice.lower() == 'q':
-            break
-            
-        if choice in tasks:
-            print(f"\n--- Задание {choice} ---")
-            tasks[choice]()
-        else:
-            print("Ошибка: выберите задание от 1 до 10")
-
-if __name__ == "__main__":
-    main()
+  
