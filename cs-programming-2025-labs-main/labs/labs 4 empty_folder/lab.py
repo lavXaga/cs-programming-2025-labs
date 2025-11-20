@@ -1,91 +1,91 @@
 # задание 1
-def task1():
-    try:
-        temperature = float(input("Введите температуру: "))
-        if temperature >= 20:
-            print("Кондиционер выключен")
-        else:
-            print("Кондиционер включен")
-    except ValueError:
-        print("Ошибка")
+
+ try:
+      temperature = float(input("Введите температуру: "))
+      if temperature >= 20:
+        print("Кондиционер выключен")
+      else:
+        print("Кондиционер включен")
+ except ValueError:
+       print("Ошибка")
 
 # задание 2
-def task2():
-    try:
-        month = int(input("Введите номер месяца: "))
-        if month in [12, 1, 2]:
-            print("Это зима")
-        elif month in [3, 4, 5]:
-            print("Это весна")
-        elif month in [6, 7, 8]:
-            print("Это лето")
-        elif month in [9, 10, 11]:
-            print("Это осень")
-        else:
+
+try:
+       month = int(input("Введите номер месяца: "))
+    if month in [12, 1, 2]:
+         print("Это зима")
+       elif month in [3, 4, 5]:
+           print("Это весна")
+       elif month in [6, 7, 8]:
+           print("Это лето")
+       elif month in [9, 10, 11]:
+           print("Это осень")
+      else:
             print("Ошибка")
     except ValueError:
         print("Ошибка")
 
 # задание 3
-def task3():
-    try:
-        dog_age = float(input("Введите возраст собаки (в годах): "))
+
+ try:
+     dog_age = float(input("Введите возраст собаки (в годах): "))
         
-        if dog_age < 1:
-            print("Ошибка")
-        elif dog_age > 22:
-            print("Ошибка")
-        else:
-            if dog_age <= 2:
-                human_age = dog_age * 10.5
-            else:
-                human_age = 21 + (dog_age - 2) * 4
+    if dog_age < 1:
+        print("Ошибка")
+       elif dog_age > 22:
+           print("Ошибка")
+    else:
+          if dog_age <= 2:
+            human_age = dog_age * 10.5
+         else:
+               human_age = 21 + (dog_age - 2) * 4
             
             print(f"Возраст собаки в человеческих годах: {human_age}")
     except ValueError:
         print("Ошибка")
 
 # задание 4
-def task4():
-    try:
-        number = input("Введите число: ")
+
+ try:
+     number = input("Введите число: ")
         
-        last_digit = int(number[-1])
-        even_last = last_digit % 2 == 0
+     last_digit = int(number[-1])
+     even_last = last_digit % 2 == 0
         
-        digit_sum = sum(int(digit) for digit in number if digit.isdigit())
-        divisible_by_3 = digit_sum % 3 == 0
+      digit_sum = sum(int(digit) for digit in number if digit.isdigit())
+      divisible_by_3 = digit_sum % 3 == 0
         
-        if even_last and divisible_by_3:
-            print(f"Число {number} делится на 6")
-        else:
-            print(f"Число {number} не делится на 6")
+      if even_last and divisible_by_3:
+         print(f"Число {number} делится на 6")
+      else:
+          print(f"Число {number} не делится на 6")
             
-    except ValueError:
-        print("Ошибка")
+  except ValueError:
+       print("Ошибка")
 
 # задание 5
-def task5():
-    password = input("Введите пароль: ")
+
+  password = input("Введите пароль: ")
     
-    errors = []
+  errors = []
     
-    if len(password) < 8:
-        errors.append("длина менее 8 символов")
+if len(password) < 8:
+      errors.append("длина менее 8 символов")
     
-    has_upper = any(char.isupper() for char in password)
-    if not has_upper:
-        errors.append("отсутствуют заглавные буквы")
+has_upper = any(char.isupper() for char in password)
+ if not has_upper:
+      errors.append("отсутствуют заглавные буквы")
     
-    has_lower = any(char.islower() for char in password)
-    if not has_lower:
-        errors.append("отсутствуют строчные буквы")
+ has_lower = any(char.islower() for char in password)
+ if not has_lower:
+  errors.append("отсутствуют строчные буквы")
     
-    has_digit = any(char.isdigit() for char in password)
-    if not has_digit:
-        errors.append("отсутствуют цифры")
+ has_digit = any(char.isdigit() for char in password)
+ if not has_digit:
+       errors.append("отсутствуют цифры")
     
-    has_special = any(not char.isalnum() for char in password)
+has_special = any(not char.isalnum() for char in password)
     if not has_special:
         errors.append("отсутствуют специальные символы")
     
@@ -95,7 +95,7 @@ def task5():
         print("Пароль надежный")
 
 # задание 6
-def task6():
+
     try:
         year = int(input("Введите год: "))
         
@@ -108,7 +108,7 @@ def task6():
         print("Ошибка")
 
 # задание 7
-def task7():
+
     try:
         numbers = input("Введите три числа: ").split()
         if len(numbers) != 3:
@@ -129,7 +129,7 @@ def task7():
         print("Ошибка")
 
 # задание 8
-def task8():
+
     try:
         purchase_amount = float(input("Введите сумму покупки: "))
         
@@ -151,7 +151,7 @@ def task8():
         print("Ошибка")
 
 # задание 9
-def task9():
+
     try:
         hour = int(input("Введите час (0-23): "))
         
@@ -170,7 +170,7 @@ def task9():
         print("Ошибка")
 
 # задание 10
-def task10():
+
     try:
         number = int(input("Введите число: "))
         
