@@ -192,6 +192,6 @@ def task10():
     except ValueError:
         print("Ошибка")
 
-def main():
+
    
   
