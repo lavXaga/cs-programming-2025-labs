@@ -1,8 +1,9 @@
 # Задание 1
-s='1 2 3 4 5 6 7 8 9 10'
-while '3' in s :
-    if '3' in s :s=s.replace('3','30',1)
-    print(s)
+s=[1 2 3 4 5 6 7 8 9 10]
+sps=' '.join(s)
+while '3' in sps :
+    if '3' in sps :sps=sps.replace('3','30',1)
+    print(sps)
     break
 
 # Задание 2
