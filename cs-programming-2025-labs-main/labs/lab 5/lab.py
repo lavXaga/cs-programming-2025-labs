@@ -12,7 +12,7 @@ for i in range(5):
     c.append(b[i] * b[i])
 print(b)
 print(c)
-print()
+
 
 # Задание 3
 d = [12, 45, 23, 67, 34]
@@ -24,7 +24,7 @@ result = max_num / 5
 print(d)
 print(max_num)
 print(result)
-print()
+
 
 # Задание 4
 t = (5, 2, 8, 1)
@@ -43,7 +43,7 @@ if all_ok:
     print(tuple(lst))
 else:
     print(t)
-print()
+
 
 # Задание 5
 shop = {"молоко": 50, "хлеб": 30, "сыр": 200}
@@ -59,7 +59,7 @@ for item in shop:
         max_item = item
 print(min_item, min_price)
 print(max_item, max_price)
-print()
+
 
 # Задание 6
 lst = ["a", "b", "c"]
@@ -67,7 +67,7 @@ d = {}
 for x in lst:
     d[x] = x
 print(d)
-print()
+
 
 # Задание 7
 words = {"apple": "яблоко", "dog": "собака"}
@@ -81,7 +81,7 @@ if w in r_words:
     print(r_words[w])
 else:
     print("Нет")
-print()
+
 
 # Задание 8
 import random
@@ -104,7 +104,7 @@ elif player == "спок" and comp in ["камень", "ножницы"]:
     print("Ты выиграл")
 else:
     print("Компьютер выиграл")
-print()
+
 
 # Задание 9
 fruits = ["яблоко", "груша", "банан", "киви", "апельсин", "ананас"]
@@ -115,7 +115,7 @@ for fruit in fruits:
         res[letter] = []
     res[letter].append(fruit)
 print(res)
-print()
+
 
 # Задание 10
 students = [("Анна", [5,4,5]), ("Иван", [3,4,4]), ("Мария", [5,5,5])]
