@@ -5,13 +5,11 @@ def task1():
     from_u = data[1]
     to_u = data[2]
     
-    # Конвертируем всё в секунды
     if from_u == "h":
         num = num * 3600
     elif from_u == "m":
         num = num * 60
     
-    # Конвертируем из секунд в нужную единицу
     if to_u == "h":
         num = num / 3600
     elif to_u == "m":
