@@ -15,7 +15,6 @@
     elif to_u == "m":
         num = num / 60
     
-    # Форматируем вывод
     if num == int(num):
         print(f"{int(num)}{to_u}")
     else:
@@ -30,12 +29,10 @@
         print("Ошибка")
         return
     
-    # Бонус за сумму: каждые 10000 руб = +0.3%, максимум +5%
     bonus = (a // 10000) * 0.3
     if bonus > 5:
         bonus = 5
     
-    # Базовая ставка по сроку
     if n <= 3:
         rate = 3.0
     elif n <= 6:  # 4-6 лет
@@ -43,15 +40,12 @@
     else:  # более 6 лет
         rate = 2.0
     
-    # Итоговая ставка
     rate = rate + bonus
     
-    # Считаем сложный процент
     money = float(a)
     for _ in range(n):
         money = money + money * (rate / 100)
     
-    # Прибыль
     profit = money - a
     print(f"{profit:.2f}")
 
