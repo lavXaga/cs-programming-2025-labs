@@ -1,5 +1,5 @@
 # Задание 1
-def task1():
+
     data = input().split()
     num = float(data[0])
     from_u = data[1]
@@ -23,7 +23,7 @@ def task1():
 
 
 # Задание 2
-def task2():
+
     a, n = map(int, input().split())
     
     if a < 30000:
@@ -57,7 +57,7 @@ def task2():
 
 
 # Задание 3
-def task3():
+
     start, end = map(int, input().split())
     
     if start > end:
@@ -83,7 +83,7 @@ def task3():
 
 
 # Задание 4
-def task4():
+
     n = int(input())
     
     if n <= 2:
@@ -112,7 +112,7 @@ def task4():
 
 
 # Задание 5
-def task5():
+
     text = input().lower()
     
     cleaned = ""
